@@ -1,0 +1,21 @@
+Abstraction insanın aşık olmasına benzer.
+
+Abstract Class (Soyut Sınıf) Nedir?
+Nesne tabanlı programlamada sınıf hiyerarşisi oluşturulurken, bazen en tepede bulunan sınıf türünden nesneler programcılar için anlamlı olmayabilir. Hiyerarşinin en tepesinde bulunan sınıfın kendisinden türetilecek olan alt sınıflar için ortak bir arayüz (interface) görevi yapması istenebilir. Bunun için çözüm olarak oluşturulan metotlara ve sınıflara soyut metot (abstract method) ya da soyut sınıf (abstract class) denir. Soyut sınıflar büyük projelerde kullanılırlar ve kalıtım özelliğini kullanarak kod tekrarını azaltırlar. Soyut sınıflar diğer sınıflara taban olmak için kullanılırlar. Nesne türetemezler. Önlerine “abstract” sözcüğü yazılarak soyutlaştırılırlar. Önlerine "virtual" yazılmaz çünkü “abstract” sözcüğü uygulanan tüm sınıf ve metotlar zaten sanaldır.
+Kullanırken dikkat edilmesi gerekenler:
+•    Soyut sınıflar “abstract” türünden nesneler tanımlamazlar.
+•    Soyut sınıflar içerilerinde soyut olmayan metotlar da barındırabilir ancak soyut metotlar sadece soyut sınıflar içerisinde bildirilebilir.
+•    Soyut metotlar türeyen sınıfta mutlaka bildirilmelidir.
+•    Soyut metotlar override edilmek zorundadırlar, aksi takdirde derleyici hatası alınır.
+•    “Static” metotlar soyut olarak tanımlanamazlar.
+•    Soyut sınıflar “private” olarak tanımlanamazlar ama “public” ve “protected” olarak tanımlanabilirler.
+•    Soyut sınıflar “sealed” anahtar sözcüğü ile ifade edilemezler.  
+
+Abstraction (Soyutlama) Nedir?
+Nesne yönelimli programlamada Soyutlama (Abstraction) ilkesi, eğer bir sınıf için nesne üretmek mantıksız geliyorsa o sınıf soyutlanabilir. Alt sınıfların ortak özelliklerini ve işlevlerini taşıyan ancak henüz bir nesnesi olmayan bir üst sınıf oluşturmak istenirse bir soyut (abstract) üst sınıf oluşturulur.
+Soyutlama, bir sınıfa veya metoda temel görevlerin tanımlanması, detayların ise tanımlanmaması demektir. Temel olarak bir soruna ait çözüme giderken kullanılacak yöntemlerin, ilk etapta daha genel basit ve soyut bir tanımını yapmaktır.
+
+Polymorphism (Çok Biçimlilik) Nedir?
+Nesne Yönelimli Programlama (Object Oriented Programming) bir bilgisayar programlama yaklaşımıdır. Günümüzde birçok çağdaş programlama dili tarafından desteklenmektedir. C# bu diller arasında yer almaktadır. OOP, C# tarafında tanımlı olmayan yapıları bizlere tanımlama imkânı sağlar. Polymorphism, nesne yönelimli programlamanın prensipleri arasında yer almaktadır.
+Çok Biçimlilik (Polymorphism) Nedir ?
+Bir temel sınıfın özellik ve metotlarını, temel sınıftan türetilen bir sınıfa aktardığımızda temel sınıfa ait metotları türemiş sınıf içerisinde de kullanabiliriz. Ancak her iki sınıfta da aynı metot bulunduğunda temel sınıftaki metot kullanılacak, türemiş sınıftaki metot ise kullanılmayacaktır. Temel sınıfa ait metotları türemiş sınıfta farklı biçimlerde tanımlayarak kullanmak için override ve virtual niteleyicilerini kullanmak gereklidir.
